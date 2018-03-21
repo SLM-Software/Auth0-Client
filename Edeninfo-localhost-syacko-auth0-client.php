@@ -15,7 +15,7 @@ curl_setopt_array($curl, array(
 	CURLOPT_TIMEOUT => 30,
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "POST",
-	CURLOPT_POSTFIELDS => "{\"client_id\":\"aJL3bcFx0Dn3lJ9M5kRV37TVPl5udPLP\",\"client_secret\":\"9uLru3L3t7oKJB8CYTGgA5-Xt4NfWsgwWufWzZ7uuaMxfYPEbt-q4ORzot_Y49MO\",\"audience\":\"https://localhost/edeninfo\",\"grant_type\":\"client_credentials\"}",
+	CURLOPT_POSTFIELDS => "{\"client_id\":\"sYcJC2UzUCBsNbq38LwQuZ9z28gGWC54\",\"client_secret\":\"52nHcXNMOL1LO1BU-4Wr09Fl5SyBiMbMoA85x6QIE7ur9UvaOngW-vnAd_fcNVY_\",\"audience\":\"https://localhost/edeninfo\",\"grant_type\":\"client_credentials\"}",
 	CURLOPT_HTTPHEADER => array(
 		"content-type: application/json"
 	),
