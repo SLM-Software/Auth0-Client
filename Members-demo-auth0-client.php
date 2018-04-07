@@ -2,13 +2,10 @@
 /**
  * Created by PhpStorm.
  * User: syacko
- * Date: 3/21/18
- * Time: 9:09 AM
+ * Date: 3/13/18
+ * Time: 5:32 PM
  */
-
 $curl = curl_init();
-
-$postFields[0] = "{\"client_id\":\"4b7312zrY5eeaU0zdNeBg5LxIoG7RiEz\",\"client_secret\":\"9f1_2mLdGKdetHVfMM_A95f5izfZa5_XcSgL2cNzzTngwZn25Pm-wkxH11ki5Rm_\",\"audience\":\"https://localhost/members\",\"grant_type\":\"client_credentials\"}";
 
 curl_setopt_array($curl, array(
 	CURLOPT_URL => "https://spotlightmartdev.auth0.com/oauth/token",
@@ -18,7 +15,7 @@ curl_setopt_array($curl, array(
 	CURLOPT_TIMEOUT => 30,
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "POST",
-	CURLOPT_POSTFIELDS => $postFields[0],
+	CURLOPT_POSTFIELDS => "{\"client_id\":\"Qs0VyYHhfCBiJlPd5qh1BN80olgn81UE\",\"client_secret\":\"psWNlAjYELPFr_sMXRBmv3S3ZbOhScMCJh91T9LDhc2I1ubGdQNZzjfhUMqUZ6Hp\",\"audience\":\"https://demo.yackofamily.com/members\",\"grant_type\":\"client_credentials\"}",
 	CURLOPT_HTTPHEADER => array(
 		"content-type: application/json"
 	),

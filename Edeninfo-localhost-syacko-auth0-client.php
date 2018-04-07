@@ -7,6 +7,8 @@
  */
 $curl = curl_init();
 
+$postFields[0] = "{\"client_id\":\"sYcJC2UzUCBsNbq38LwQuZ9z28gGWC54\",\"client_secret\":\"52nHcXNMOL1LO1BU-4Wr09Fl5SyBiMbMoA85x6QIE7ur9UvaOngW-vnAd_fcNVY_\",\"audience\":\"https://localhost/edeninfo\",\"grant_type\":\"client_credentials\"}";
+
 curl_setopt_array($curl, array(
 	CURLOPT_URL => "https://spotlightmartdev.auth0.com/oauth/token",
 	CURLOPT_RETURNTRANSFER => true,
@@ -15,7 +17,7 @@ curl_setopt_array($curl, array(
 	CURLOPT_TIMEOUT => 30,
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "POST",
-	CURLOPT_POSTFIELDS => "{\"client_id\":\"sYcJC2UzUCBsNbq38LwQuZ9z28gGWC54\",\"client_secret\":\"52nHcXNMOL1LO1BU-4Wr09Fl5SyBiMbMoA85x6QIE7ur9UvaOngW-vnAd_fcNVY_\",\"audience\":\"https://localhost/edeninfo\",\"grant_type\":\"client_credentials\"}",
+	CURLOPT_POSTFIELDS => $postFields[0],
 	CURLOPT_HTTPHEADER => array(
 		"content-type: application/json"
 	),
@@ -30,4 +32,6 @@ if ($err) {
 	echo "cURL Error #:" . $err;
 } else {
 	echo $response;
+	$token = json_decode($response)->access_token;
+	echo "\n\n\$token=$token";
 }
