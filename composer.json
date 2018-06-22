@@ -1,12 +1,12 @@
 {
-  "name": "EDEN/Auth0-Client",
+  "name": "SOTE/Auth0-Client",
   "description": "This is a test harness for Auth0",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
       "name": "Scott Yacko",
-      "email": "Scott@yackofamily.com"
+      "email": "Scott@getsote.com"
     }
   ],
   "require": {

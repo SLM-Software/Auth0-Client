@@ -8,14 +8,14 @@
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-	CURLOPT_URL => "https://spotlightmartdev.auth0.com/oauth/token",
+	CURLOPT_URL => "https://getsote.eu.auth0.com/oauth/token",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",
 	CURLOPT_MAXREDIRS => 10,
 	CURLOPT_TIMEOUT => 30,
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "POST",
-	CURLOPT_POSTFIELDS => "{\"client_id\":\"Qs0VyYHhfCBiJlPd5qh1BN80olgn81UE\",\"client_secret\":\"psWNlAjYELPFr_sMXRBmv3S3ZbOhScMCJh91T9LDhc2I1ubGdQNZzjfhUMqUZ6Hp\",\"audience\":\"https://demo.yackofamily.com/members\",\"grant_type\":\"client_credentials\"}",
+	CURLOPT_POSTFIELDS => "{\"client_id\":\"uU6r62LiYtDLzhH7Qwo6e3Gcm0oGDBbm\",\"client_secret\":\"EW7M5yCOISy5q1WEZU28XluN_BoVoVNLPfxZN6qbkUt5OlYp3YEM0kfjzz1MG6fT\",\"audience\":\"https://localhost/businesses\",\"grant_type\":\"client_credentials\"}",
 	CURLOPT_HTTPHEADER => array(
 		"content-type: application/json"
 	),

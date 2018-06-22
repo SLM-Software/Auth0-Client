@@ -8,14 +8,14 @@
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-	CURLOPT_URL => "https://spotlightmartdev.auth0.com/oauth/token",
+	CURLOPT_URL => "https://getsote.eu.auth0.com/oauth/token",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",
 	CURLOPT_MAXREDIRS => 10,
 	CURLOPT_TIMEOUT => 30,
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "POST",
-	CURLOPT_POSTFIELDS => "{\"client_id\":\"hHNKgm9em5zKphauhPFURWc5fOuVfCfg\",\"client_secret\":\"EF0kKsO4kD209Pwu827PkfiZLd-PiGcQWwYV94Tr5HCiVXtFOUc72D5BcdWnfGgZ\",\"audience\":\"https://demo.yackofamily.com/edeninfo\",\"grant_type\":\"client_credentials\"}",
+	CURLOPT_POSTFIELDS => "{\"client_id\":\"iXwqjc0Y2mSGG4w0S8xljJdweQDcHKBR\",\"client_secret\":\"of4R37KlJ96ZuVXJ_BcRb8fgCJcnVdRSAN5sjPbeicf2eUv8FF38Lh7y-SpZXvaX\",\"audience\":\"https://api.getsote.com/businesses\",\"grant_type\":\"client_credentials\"}",
 	CURLOPT_HTTPHEADER => array(
 		"content-type: application/json"
 	),
